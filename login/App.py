@@ -2,7 +2,7 @@ from bottle import Bottle, run, template, request
 
 app = Bottle()
 
-# Lista de usuários e senhas de exemplo
+# Lista de usuários de exemplo
 usuarios = {
     "usuario1@example.com": "senha123",
     "usuario2@example.com": "senha456"
@@ -10,7 +10,7 @@ usuarios = {
 
 @app.route('/login', method='GET')
 def login_form():
-    return template('login_form')
+    return template('login_form.tpl')
 
 @app.route('/login', method='POST')
 def login():
