@@ -3,7 +3,7 @@
 
 
 Executar o Sevidor:
-python3 app.py
+python app.py
 
 
 Entrar na Pagina:
